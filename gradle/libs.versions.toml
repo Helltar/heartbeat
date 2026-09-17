@@ -1,0 +1,14 @@
+[versions]
+kotlin = "2.4.20"
+dokka = "2.2.0"
+# the last 1.x on purpose: only calls that exist in both lines are used, so a consumer on slf4j 2 keeps
+# its own version, and one still on 1.7 is not pushed onto an api its logging backend cannot bind to.
+slf4j = "1.7.36"
+
+[libraries]
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+slf4j-nop = { module = "org.slf4j:slf4j-nop", version.ref = "slf4j" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
