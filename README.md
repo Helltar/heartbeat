@@ -1,5 +1,8 @@
 # heartbeat
 
+[![Maven Central](https://img.shields.io/maven-central/v/com.helltar/heartbeat?label=maven%20central)](https://central.sonatype.com/artifact/com.helltar/heartbeat)
+[![Kotlin](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2FHelltar%2Fheartbeat%2Fmain%2Fgradle%2Flibs.versions.toml&query=%24.versions.kotlin&logo=kotlin&label=kotlin&color=blue)](https://kotlinlang.org)
+
 A file-based liveness signal for a container healthcheck, fed by the loop it watches.
 
 A JVM service can stop doing its job while its process stays alive: a task on a scheduled executor
